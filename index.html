@@ -10,10 +10,35 @@
 </head>
 
 <body>
-    <form>
-        <h1 id="title">Cadastre-se</h1>
-        <input id="nome" type="text" placeholder="Digite seu nome completo">
+    <form id="form">
+        <h1 id="title">Formulário para Contato</h1>
+
+        <fieldset>
+        <legend>Nome Completo</legend>
+                <input id="nome" type="text" placeholder="Digite seu nome completo">
+
+        <legend>E-mail</legend>
+                <input type="email" placeholder="Digite seu e-mail">
+
+        <legend>Telefone</legend>
+                <input type="tel" placeholder="Digite seu telefone com DDD">
+
+        <legend>Assunto</legend>
+                <div>
+                   <select name="" id="">
+
+                    <option value="aniversario">Anivesário 15 anos</option>
+                    <option value="campanha">Campanha política</option>
+                    <option value="casamento">Casamento</option>
+                    <option value="drone">Drone</option>
+                    <option value="edicao">Edição de vídeo</option>
+
+                   </select> 
+                </div>  
+        </fieldset>  
     </form>
+
+     
     
 </body>
 </html>
