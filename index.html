@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/form.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Formulário de Cadastro</title>
+    <title>Contact Form</title>
 </head>
 
 <body>
@@ -14,18 +14,18 @@
         <h1 id="title">Formulário para Contato</h1>
 
         <fieldset>
-        <legend>Nome Completo</legend>
-                <input id="nome" type="text" placeholder="Digite seu nome completo">
+        <legend class="legenda">Nome Completo</legend>
+                <input id="nome" type="text" class="dados" placeholder="Digite seu nome completo"><br>
 
-        <legend>E-mail</legend>
-                <input type="email" placeholder="Digite seu e-mail">
+        <legend class="legenda">E-mail</legend>
+                <input type="email"  class="dados" placeholder="Digite seu e-mail"><br>
 
-        <legend>Telefone</legend>
-                <input type="tel" placeholder="Digite seu telefone com DDD">
+        <legend class="legenda">Telefone</legend>
+                <input type="tel" class="dados" placeholder="Digite seu telefone com DDD"><br>
 
-        <legend>Assunto</legend>
+        <legend class="legenda">Orçamento:</legend>
                 <div>
-                   <select name="" id="">
+                   <select id="">
 
                     <option value="aniversario">Anivesário 15 anos</option>
                     <option value="campanha">Campanha política</option>
@@ -34,7 +34,15 @@
                     <option value="edicao">Edição de vídeo</option>
 
                    </select> 
-                </div>  
+                </div> 
+                <div><br>
+                        <legend class="legenda">Área de texto</legend>
+                        <textarea  id="areatext" cols="70" rows="20"></textarea>
+                </div> 
+
+                <div>
+                       <button id="btn" onclick="enviarDados()">Enviar</button>
+                </div>
         </fieldset>  
     </form>
 
