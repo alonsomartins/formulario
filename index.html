@@ -12,41 +12,43 @@
 <body>
     <form id="form">
         <h1 id="title">Formulário para Contato</h1>
+<div class="parent" >
 
-        <fieldset>
-        <legend class="legenda">Nome Completo</legend>
-                <input id="nome" type="text" class="dados" placeholder="Digite seu nome completo"><br>
+        <div class="child">
+                <fieldset>
+                <legend class="legenda">Nome Completo</legend>
+                        <input id="nome" type="text" class="dados" placeholder="Digite seu nome completo"><br>
 
-        <legend class="legenda">E-mail</legend>
-                <input type="email"  class="dados" placeholder="Digite seu e-mail"><br>
+                <legend class="legenda">E-mail</legend>
+                        <input type="email"  class="dados" placeholder="Digite seu e-mail"><br>
 
-        <legend class="legenda">Telefone</legend>
-                <input type="tel" class="dados" placeholder="Digite seu telefone com DDD"><br>
+                <legend class="legenda">Telefone</legend>
+                        <input type="tel" class="dados" placeholder="Digite seu telefone com DDD"><br>
 
-        <legend class="legenda">Orçamento:</legend>
-                <div>
-                   <select id="">
+                <legend class="legenda">Orçamento:</legend>
+                        <div>
+                        <select id="opcoes">
 
-                    <option value="aniversario">Anivesário 15 anos</option>
-                    <option value="campanha">Campanha política</option>
-                    <option value="casamento">Casamento</option>
-                    <option value="drone">Drone</option>
-                    <option value="edicao">Edição de vídeo</option>
+                        <option value="aniversario">Anivesário 15 anos</option>
+                        <option value="campanha">Campanha política</option>
+                        <option value="casamento">Casamento</option>
+                        <option value="drone">Drone</option>
+                        <option value="edicao">Edição de vídeo</option>
 
-                   </select> 
-                </div> 
-                <div><br>
-                        <legend class="legenda">Área de texto</legend>
-                        <textarea  id="areatext" cols="70" rows="20"></textarea>
-                </div> 
+                        </select> 
+                        </div> 
+                        <div><br>
+                                <legend class="legenda">Área de texto</legend>
+                                <textarea  id="areatext" cols="70" rows="15"></textarea>
+                        </div> 
 
-                <div>
-                       <button id="btn" onclick="enviarDados()">Enviar</button>
-                </div>
-        </fieldset>  
+                        <div>
+                        <button id="btn" onclick="enviarDados()">ENVIAR</button>
+                        </div>
+                </fieldset> 
+        </div> 
+</div>
     </form>
-
-     
     
 </body>
 </html>
