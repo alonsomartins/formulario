@@ -17,13 +17,20 @@
         <div class="child">
                 <fieldset>
                 <legend class="legenda">Nome Completo</legend>
-                        <input id="nome" type="text" class="dados" placeholder="Digite seu nome completo"><br>
+                        <input id="nome" type="text" class="dados" placeholder="Digite seu nome completo" required><br>
 
                 <legend class="legenda">E-mail</legend>
-                        <input type="email"  class="dados" placeholder="Digite seu e-mail"><br>
+                        <input type="email"  class="dados" placeholder="Digite seu e-mail" required><br>
 
                 <legend class="legenda">Telefone</legend>
-                        <input type="tel" class="dados" placeholder="Digite seu telefone com DDD"><br>
+                        <input type="tel" class="dados" placeholder="Digite seu telefone com DDD" required><br>
+                
+                <legend class="legenda">Gênero</legend>
+                <div id="gen">
+                        <input type="radio"  name="genero" id="masculino" checked>Masculino
+                        <input type="radio" name="genero" id="femenino">Femenino
+                        <input type="radio" name="genero" id="outros">Outros
+                </div>
 
                 <legend class="legenda">Orçamento:</legend>
                         <div>
@@ -37,6 +44,9 @@
 
                         </select> 
                         </div> 
+
+                        <input type="file">
+                        
                         <div><br>
                                 <legend class="legenda">Área de texto</legend>
                                 <textarea  id="areatext" cols="70" rows="15"></textarea>
